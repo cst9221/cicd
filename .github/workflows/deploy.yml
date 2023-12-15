@@ -1,0 +1,12 @@
+name: cst9221-cicd-test
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  thisisjob:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v3
